@@ -1,4 +1,4 @@
-# SmartHomeGO
+# SmartHomeNodeGO
 
 #### 介绍
 
@@ -77,7 +77,19 @@ GOARCH：目标平台的体系架构（386、amd64、arm、mipsle）
 1. 请确保路由本机时间准确。
 2. 确保防火墙允许连接服务开启的端口。
 3. Web服务默认 8080 端口，TCP 连接使用 50001 端口。
-3. 如需使用 80端口 请确保路由器原本后台服务已经改到别的端口。
+4. 如需使用 80端口 请确保路由器原本后台服务已经改到别的端口。
+
+
+#### 项目地址
+
+SERVER: \
+github: https://github.com/crazyjy/SmartHomeNodeGO
+gitee: https://gitee.com/yjygit/SmartHomeNodeGO
+
+H5: \
+github: https://github.com/crazyjy/SmartHomeNodeH5 
+gitee: https://gitee.com/yjygit/SmartHomeNodeH5
+
 
 #### 参与贡献
 
