@@ -45,8 +45,11 @@ go run main.go -c cc
 # 路由器 cpu RT-5350：
 GOOS=linux GOARCH=mipsle GOMIPS=softfloat CGO_ENABLED=0 go build main.go
 
-# 树莓派 2B+：
+# 树莓派 B+：
 GOOS=linux GOARCH=arm GOARM=6 CGO_ENABLED=0 go build main.go
+
+# 树莓派 3B：
+GOOS=linux GOARCH=arm GOARM=7 CGO_ENABLED=0 go build main.go
 
 # Linux 64位：
 GOOS=linux GOARCH=amd64 CGO_ENABLED=0 go build main.go
@@ -56,7 +59,6 @@ GOOS：目标平台的操作系统（darwin、freebsd、linux、windows）
 GOARCH：目标平台的体系架构（386、amd64、arm、mipsle） 
 交叉编译不支持 CGO 所以要禁用它（CGO_ENABLED=0）
 ```
-
 
 #### 使用教程
 
@@ -78,18 +80,16 @@ GOARCH：目标平台的体系架构（386、amd64、arm、mipsle）
 2. 确保防火墙允许连接服务开启的端口。
 3. Web服务默认 8080 端口，TCP 连接使用 50001 端口。
 4. 如需使用 80端口 请确保路由器原本后台服务已经改到别的端口。
-
+5. *ESP8266 MINI D1 控制代码在项目 arduino/ESP8266-MINI-D1.ino
 
 #### 项目地址
-
 SERVER: \
-github: https://github.com/crazyjy/SmartHomeNodeGO
+github: https://github.com/crazyjy/SmartHomeNodeGO \
 gitee: https://gitee.com/yjygit/SmartHomeNodeGO
 
 H5: \
-github: https://github.com/crazyjy/SmartHomeNodeH5 
+github: https://github.com/crazyjy/SmartHomeNodeH5 \
 gitee: https://gitee.com/yjygit/SmartHomeNodeH5
-
 
 #### 参与贡献
 
