@@ -1,12 +1,12 @@
 package routes
 
 import (
-	"example.com/m/v2/base"
-	"example.com/m/v2/config"
-	"example.com/m/v2/http/Controllers"
 	"fmt"
 	"github.com/gin-gonic/gin"
 	"net/http"
+	"smartHomeNode/v1/base"
+	"smartHomeNode/v1/config"
+	"smartHomeNode/v1/http/Controllers"
 )
 
 var (

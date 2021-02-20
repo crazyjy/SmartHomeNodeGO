@@ -1,6 +1,6 @@
 package server
 
-import "example.com/m/v2/routes"
+import "smartHomeNode/v1/routes"
 
 type Http struct {
 	routes.Routes

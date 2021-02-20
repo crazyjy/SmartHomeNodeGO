@@ -1,11 +1,11 @@
 package Controllers
 
 import (
-	"example.com/m/v2/base"
 	"fmt"
 	"github.com/gin-gonic/gin"
 	"github.com/patrickmn/go-cache"
 	"net/http"
+	"smartHomeNode/v1/base"
 )
 
 type ButtonController struct {

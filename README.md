@@ -27,7 +27,7 @@
 
 ``` bash
 # 初始化 go mod 文件
-go mod init example.com/m/v2
+go mod init smartHomeNode/v1
 # 安装依赖
 go mod tidy
 

@@ -1,8 +1,8 @@
 package main
 
 import (
-	"example.com/m/v2/base"
-	"example.com/m/v2/server"
+	"smartHomeNode/v1/base"
+	"smartHomeNode/v1/server"
 )
 
 var b base.Base		// 基础服务

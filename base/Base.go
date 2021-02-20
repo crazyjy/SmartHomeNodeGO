@@ -1,7 +1,6 @@
 package base
 
 import (
-	"example.com/m/v2/config"
 	"flag"
 	"fmt"
 	"github.com/gin-gonic/gin"
@@ -11,6 +10,7 @@ import (
 	"log"
 	"net"
 	"os"
+	"smartHomeNode/v1/config"
 	"time"
 )
 
@@ -278,8 +278,8 @@ func (ctx *Base)InitDir(path string) {
 /**
  * 获取当前时间 ["23","05","40"]
  */
-func (ctx *Base)NowTime() []string {
-	date := []string{"0","0","0"}
+func (ctx *Base)NowTime() [3]string {
+	date := [3]string{"00","00","00"}
 	cstZone := time.FixedZone("CST", 8*3600)  // 东八
 	date[0] = fmt.Sprintf("%v", time.Now().In(cstZone).Hour())
 	date[1] = fmt.Sprintf("%v", time.Now().In(cstZone).Minute())

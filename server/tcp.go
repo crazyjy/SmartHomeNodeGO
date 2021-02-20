@@ -8,11 +8,11 @@ package server
  */
 
 import (
-	"example.com/m/v2/base"
 	"fmt"
 	"github.com/patrickmn/go-cache"
 	"log"
 	"net"
+	"smartHomeNode/v1/base"
 	"strings"
 )
 
@@ -72,7 +72,9 @@ func (ctx *Base)serverStuff(conn net.Conn, nets *map[string]net.Conn) {
 		if strings.Contains(data, "/:") {
 			info := strings.Split(data, "/:")
 			if len(info) == 3 {
-				fmt.Println("Call:" + data)
+				time := ctx.NowTime()
+				call := time[0] + ":" + time[1] + ":" + time[2]
+				fmt.Println(call +" Call: " + data)
 				ctx.checkCode(info, conn, nets)
 			} else {
 				fmt.Println("Error message: " + data)

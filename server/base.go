@@ -1,8 +1,8 @@
 package server
 
 import (
-	"example.com/m/v2/base"
-	"example.com/m/v2/config"
+	"smartHomeNode/v1/base"
+	"smartHomeNode/v1/config"
 )
 
 type Base struct {
